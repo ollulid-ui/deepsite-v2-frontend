@@ -1,0 +1,15 @@
+Last login: Fri Sep 19 20:06:23 on ttys000
+gabriel@Gabriels-MacBook-Air ~ % cd backend
+uvicorn main:app --reload
+
+cd: no such file or directory: backend
+zsh: /opt/homebrew/bin/uvicorn: bad interpreter: /opt/homebrew/opt/python@3.10/bin/python3.10: no such file or directory
+gabriel@Gabriels-MacBook-Air ~ % cd backend
+uvicorn main:app --reload
+
+cd backend
+uvicorn main:app --reload
+
+cd ~/Downloads/legal-compliance-fullstack/backend
+
+
