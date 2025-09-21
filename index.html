@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Compliance Automation SaaS</title>
+    <link rel="icon" type="image/x-icon" href="http://static.photos/legal/32x32/1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .compliance-score {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-indigo-600 font-bold text-xl">ComplyAI</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-gray-700 hover:text-indigo-600 transition">Features</a>
+                    <a href="#pricing" class="text-gray-700 hover:text-indigo-600 transition">Pricing</a>
+                    <a href="#contact" class="text-gray-700 hover:text-indigo-600 transition">Contact</a>
+                    <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition">Get Started</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-700">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#features" class="block px-3 py-2 text-gray-700 hover:text-indigo-600">Features</a>
+                <a href="#pricing" class="block px-3 py-2 text-gray-700 hover:text-indigo-600">Pricing</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-indigo-600">Contact</a>
+                <a href="#" class="block px-3 py-2 bg-indigo-600 text-white rounded-md">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient pt-24 pb-20 md:pt-32 md:pb-28 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center" data-aos="fade-up">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">AI-Powered Legal Compliance Automation</h1>
+                <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Extract clauses, flag risks, and ensure compliance with regulations like Law 25, GDPR, and HIPAA using advanced AI.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#" class="bg-white text-indigo-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition">Start Free Trial</a>
+                    <a href="#demo" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition">Request Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Powerful Features</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Our AI-driven platform helps legal teams save time and reduce compliance risks.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card bg-gray-50 p-8 rounded-xl border border-gray-200 transition" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="file-text" class="text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Clause Extraction</h3>
+                    <p class="text-gray-600">Automatically identify and extract key clauses from contracts and policies with source grounding.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="feature-card bg-gray-50 p-8 rounded-xl border border-gray-200 transition" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="alert-triangle" class="text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Risk Flagging</h3>
+                    <p class="text-gray-600">Highlight compliance risks and deviations from standard templates or regulatory requirements.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="feature-card bg-gray-50 p-8 rounded-xl border border-gray-200 transition" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="globe" class="text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Bilingual Support</h3>
+                    <p class="text-gray-600">Full English and French support for Canadian and international compliance requirements.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="feature-card bg-gray-50 p-8 rounded-xl border border-gray-200 transition" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="trending-up" class="text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Compliance Scoring</h3>
+                    <p class="text-gray-600">Get a 0-100 score showing how well your documents align with policies and regulations.</p>
+                </div>
+                <!-- Feature 5 -->
+                <div class="feature-card bg-gray-50 p-8 rounded-xl border border-gray-200 transition" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="shield" class="text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Regulatory Packs</h3>
+                    <p class="text-gray-600">Pre-configured rules for Law 25, GDPR, HIPAA, and other major regulations.</p>
+                </div>
+                <!-- Feature 6 -->
+                <div class="feature-card bg-gray-50 p-8 rounded-xl border border-gray-200 transition" data-aos="fade-up" data-aos-delay="600">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="layers" class="text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Google Workspace Integration</h3>
+                    <p class="text-gray-600">Seamlessly analyze documents directly in Google Docs with our native add-on.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">See It In Action</h2>
+                    <p class="text-xl text-gray-600 mb-8">Upload a document to see how our AI identifies clauses, flags risks, and provides compliance scores.</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Upload Document</label>
+                            <div class="flex items-center justify-center w-full">
+                                <label class="flex flex-col items-center justify-center w-full h-32 border-2 border-dashed rounded-lg cursor-pointer border-gray-300 hover:border-indigo-400">
+                                    <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                                        <i data-feather="upload-cloud" class="w-8 h-8 text-gray-400 mb-2"></i>
+                                        <p class="text-sm text-gray-500">Click to upload or drag and drop</p>
+                                        <p class="text-xs text-gray-500">PDF, DOCX, or TXT (MAX. 10MB)</p>
+                                    </div>
+                                    <input type="file" class="hidden" />
+                                </label>
+                            </div>
+                        </div>
+                        <button class="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition">Analyze Document</button>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="text-xl font-semibold">Analysis Results</h3>
+                            <div class="compliance-score w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
+                                <span class="text-green-600 font-bold text-xl">87</span>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i data-feather="check-circle" class="text-green-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-medium">Confidentiality Clause</h4>
+                                    <p class="text-sm text-gray-600">Properly formatted with standard duration</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="alert-triangle" class="text-yellow-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-medium">Liability Cap</h4>
+                                    <p class="text-sm text-gray-600">Exceeds policy limit of 1x fees (current: 2.5x)</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="x-circle" class="text-red-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-medium">Governing Law</h4>
+                                    <p class="text-sm text-gray-600">Missing required jurisdiction specification</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="w-full mt-6 border border-indigo-600 text-indigo-600 py-2 rounded-lg font-semibold hover:bg-indigo-50 transition">View Detailed Report</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Simple, Transparent Pricing</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Choose the plan that works best for your organization</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Starter Plan -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-200" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-2xl font-semibold mb-4">Starter</h3>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold">$99</span>
+                        <span class="text-gray-600">/month</span>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>Up to 50 documents/month</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>Basic clause extraction</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>Standard risk flags</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="x" class="text-gray-400 mr-2"></i>
+                            <span class="text-gray-400">Compliance scoring</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="x" class="text-gray-400 mr-2"></i>
+                            <span class="text-gray-400">Regulatory packs</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-gray-200 text-gray-700 py-3 rounded-lg font-semibold hover:bg-gray-300 transition">Get Started</button>
+                </div>
+                <!-- Professional Plan -->
+                <div class="bg-white p-8 rounded-xl border-2 border-indigo-600 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-2xl font-semibold">Professional</h3>
+                        <span class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-sm font-medium">Popular</span>
+                    </div>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold">$499</span>
+                        <span class="text-gray-600">/month</span>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>Up to 500 documents/month</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>Advanced clause extraction</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>Custom risk flags</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>Compliance scoring</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>2 Regulatory packs</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition">Get Started</button>
+                </div>
+                <!-- Enterprise Plan -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-200" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-2xl font-semibold mb-4">Enterprise</h3>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold">$2,500</span>
+                        <span class="text-gray-600">/month</span>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>Unlimited documents</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>Premium extraction features</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>Advanced risk analytics</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>Compliance dashboard</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>All regulatory packs</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-gray-200 text-gray-700 py-3 rounded-lg font-semibold hover:bg-gray-300 transition">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 hero-gradient text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Compliance Process?</h2>
+            <p class="text-xl mb-10 max-w-3xl mx-auto">Join hundreds of legal teams who trust our AI-powered platform to save time and reduce risks.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#" class="bg-white text-indigo-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition">Start Free Trial</a>
+                <a href="#contact" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition">Contact Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">ComplyAI</h3>
+                    <p class="text-gray-400">AI-powered legal compliance automation for modern legal teams.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Product</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#features" class="hover:text-white transition">Features</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition">Pricing</a></li>
+                        <li><a href="#" class="hover:text-white transition">API</a></li>
+                        <li><a href="#" class="hover:text-white transition">Documentation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">About</a></li>
+                        <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="github"></i></a>
+                    </div>
+                    <p class="mt-4 text-gray-400">contact@complyai.com</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 ComplyAI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+        
+        feather.replace();
+        
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        
+        // Simple animation for compliance score
+        document.addEventListener('DOMContentLoaded', function() {
+            const scoreElement = document.querySelector('.compliance-score');
+            if (scoreElement) {
+                setTimeout(() => {
+                    scoreElement.classList.add('scale-110');
+                }, 1000);
+            }
+        });
+    </script>
+</body>
+</html>
